@@ -63,11 +63,3 @@ class DTW:
             alignment_path.append(index)
 
         return alignment_cost, alignment_path[::-1]
-
-dtw = DTW()
-
-#An example
-X = [0,2,0,1,0,0]
-Y = [0,0,0.5,2,0,1,0]
-
-print(dtw.warp(X, Y))
